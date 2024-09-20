@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculator App</h1>
+    <div class="container">
+      <input type="text" class="display" value="0" readonly />
+      <div class="btn">
+        <!-- memory buttons -->
+        <button onClick="memoryAdd()">M+</button>
+        <button onClick="memorySubtract()">M-</button>
+        <button onClick="memoryClear()">MC</button>
+        <button onClick="memoryRecall()">MR</button>
+        <!-- Numeric buttons -->
+        <button onClick="buttonClick('7')">7</button>
+        <button onClick="buttonClick('8')">8</button>
+        <button onClick="buttonClick('9')">9</button>
+        <button onClick="buttonClick('/')">/</button>
+        <button onClick="buttonClick('4')">4</button>
+        <button onClick="buttonClick('5')">5</button>
+        <button onClick="buttonClick('6')">6</button>
+        <button onClick="buttonClick('*')">*</button>
+        <button onClick="buttonClick('1')">1</button>
+        <button onClick="buttonClick('2')">2</button>
+        <button onClick="buttonClick('3')">3</button>
+        <button onClick="buttonClick('-')">-</button>
+        <button onClick="buttonClick('0')">0</button>
+        <button onClick="buttonClick('.')">.</button>
+        <button onClick="percentage()">%</button>
+        <button onClick="buttonClick('+')">+</button>
+        <!-- Function buttons -->
+        <button onClick="squareRoot()">&radic;</button>
+        <button onClick="clearDisplay()">C</button>
+        <button onClick="resultDisplay()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
